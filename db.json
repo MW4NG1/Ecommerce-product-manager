@@ -1,0 +1,60 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Oak & Time",
+      "description": "Timeless watches for modern character.",
+      "phone_number": "555-0147"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Heritage Classic",
+      "description": "A refined timepiece inspired by classic watchmaking.",
+      "style": "Classic",
+      "material": "Stainless Steel",
+      "price": 189.99
+    },
+    {
+      "id": 2,
+      "name": "Midnight Chrono",
+      "description": "A bold chronograph designed for a modern look.",
+      "style": "Chronograph",
+      "material": "Stainless Steel",
+      "price": 249.99
+    },
+    {
+      "id": 3,
+      "name": "Cedar Automatic",
+      "description": "An elegant automatic watch paired with a warm leather strap.",
+      "style": "Automatic",
+      "material": "Leather & Steel",
+      "price": 329.99
+    },
+    {
+      "id": 4,
+      "name": "Urban Minimal",
+      "description": "A clean and understated design for everyday wear.",
+      "style": "Minimalist",
+      "material": "Stainless Steel",
+      "price": 159.99
+    },
+    {
+      "id": 5,
+      "name": "Ember Gold",
+      "description": "A sophisticated gold-tone timepiece with a modern finish.",
+      "style": "Luxury",
+      "material": "Gold-Tone Steel",
+      "price": 399.99
+    },
+    {
+      "id": 6,
+      "name": "Field Explorer",
+      "description": "A durable everyday watch inspired by outdoor exploration.",
+      "style": "Field",
+      "material": "Stainless Steel",
+      "price": 219.99
+    }
+  ]
+}
