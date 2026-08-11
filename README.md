@@ -75,7 +75,7 @@ Before running the project, make sure you have the following installed:
 - Git
 
 1. Clone the repository
-   git clone YOUR_GITHUB_REPOSITORY_URL
+   git clone your repository
 2. Navigate into the project
    cd Ecommerce-product-manager
 3. Install dependencies
