@@ -2,8 +2,8 @@ import { useState } from "react";
 
 // Shop will display the available watches and search functionality
 function Shop() {
-    // Stores the text entered into the search bar.
-    const [searchTerm, setSearchTerm] = useState("");
+  // Stores the text entered into the search bar.
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <main>
       <h1>Our Collection</h1>
