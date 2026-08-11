@@ -1,18 +1,20 @@
 import { useState, useEffect } from "react";
+// Base URL for the simulated product API.
+const API_URL = "http://localhost:6001/products";
 
 // Custom hook responsible for loading and managing product data.
 function useProducts() {
   const [products, setProducts] = useState([]);
   // Fetch products from the simulated backend when the hook is first used.
   useEffect(() => {
-    fetch("http://localhost:6001/products")
+    fetch(API_URL)
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
   // Sends a POST request to create a new watch in the backend.
   const addProduct = (newProduct) => {
-    return fetch("http://localhost:6001/products", {
+    return fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +34,7 @@ function useProducts() {
 
   // Sends a PATCH request to update an existing watch.
   const updateProduct = (id, updatedProduct) => {
-    return fetch(`http://localhost:6001/products/${id}`, {
+    return fetch(`${API_URL}/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
