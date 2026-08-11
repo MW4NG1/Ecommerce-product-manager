@@ -30,10 +30,35 @@ function useProducts() {
       });
   };
 
+  // Sends a PATCH request to update an existing watch.
+  const updateProduct = (id, updatedProduct) => {
+    return fetch(`http://localhost:6001/products/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedProduct),
+    })
+      .then((response) => response.json())
+      .then((updatedProduct) => {
+        // Replace the old product with the updated product in React state.
+        setProducts((currentProducts) =>
+          currentProducts.map((product) =>
+            product.id === updatedProduct.id ? updatedProduct : product,
+          ),
+        );
+        return updatedProduct;
+      })
+      .catch((error) => {
+        console.error("Error updating product:", error);
+      });
+  };
+
   return {
     products,
     setProducts,
     addProduct,
+    updateProduct,
   };
 }
 
