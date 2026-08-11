@@ -198,7 +198,7 @@ function Admin() {
             required
           />
 
-          <label htmlFor="edit-price">Price</label>
+          <label htmlFor="edit-price">Edit Price</label>
           <input
             id="edit-price"
             name="price"
