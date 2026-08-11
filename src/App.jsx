@@ -5,6 +5,9 @@ import Home from "./components/Home";
 import Shop from "./components/Shop";
 import Admin from "./components/Admin";
 
+// Import ProductProvider so product data can be shared across the application.
+import { ProductProvider } from "./context/ProductContext";
+
 function App() {
   return (
     <BrowserRouter>
